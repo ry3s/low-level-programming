@@ -1,5 +1,4 @@
-FROM debian:8
+FROM alpine:3.4
 
-RUN apt-get update
-RUN apt-get install -y binutils nasm gdb
-RUN apt-get install -y emacs
+RUN apk update
+RUN apk add binutils nasm gdb
